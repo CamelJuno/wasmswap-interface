@@ -11,8 +11,8 @@ export default function Mint() {
         title="Mint"
         subtitle="Mint your CW20 token on Juno."
       />
-      	  <div>{'Token Name'}</div>
-      	  <div>{'Token Symbol'}</div>
+      	  <div>{'Name'}</div>
+      	  <div>{'Symbol'}</div>
       	  <div>{'Description'}</div>
       	  <div>{'Total Supply'}</div>
 		      <Button
