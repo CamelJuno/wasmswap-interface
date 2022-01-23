@@ -6,7 +6,7 @@ import { useConnectWallet } from '../../hooks/useConnectWallet'
 import { useRecoilState } from 'recoil'
 import { walletState, WalletStatusType } from '../../state/atoms/walletAtoms'
 import { useRouter } from 'next/router'
-import { Address, ArrowUp, Open } from '../../icons'
+import { Address, ArrowUp, Open, Flask } from '../../icons'
 import { IconWrapper } from '../IconWrapper'
 import { ConnectedWalletButton } from '../ConnectedWalletButton'
 import { Logo } from '../../icons/Logo'
@@ -101,6 +101,17 @@ export function NavigationSidebar() {
               Liquidity
             </Button>
           </Link>
+          <Link href="/mint" passHref>
+            <Button
+              as="a"
+              variant="menu"
+              size="large"
+              iconLeft={<IconWrapper icon={<Flask />} />}
+              selected={getIsLinkActive('/mint')}
+            >
+              Mint
+            </Button>
+          </Link>  
         </StyledListForLinks>
       </StyledMenuContainer>
       <StyledDivForFooter data-footer="">
