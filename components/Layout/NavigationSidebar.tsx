@@ -101,13 +101,14 @@ export function NavigationSidebar() {
               Liquidity
             </Button>
           </Link>
-          <Link href="/mint" passHref>
+          <Link href="https://daodao.zone" passHref>
             <Button
               as="a"
+              target="__blank"
               variant="menu"
               size="large"
               iconLeft={<IconWrapper icon={<Flask />} />}
-              selected={getIsLinkActive('/mint')}
+              selected={getIsLinkActive('https://daodao.zone')}
             >
               Mint
             </Button>
